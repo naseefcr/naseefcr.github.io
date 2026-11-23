@@ -1,112 +1,183 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Naseef CR - Flutter Developer</title>
-      <style>
-          body {
-              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-              line-height: 1.6;
-              margin: 0;
-              padding: 40px 20px;
-              background: #f8fafc;
-              color: #334155;
-          }
-          .container {
-              max-width: 800px;
-              margin: 0 auto;
-              background: white;
-              padding: 40px;
-              border-radius: 12px;
-              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-          }
-          h1 {
-              color: #1e293b;
-              margin-bottom: 10px;
-          }
-          .subtitle {
-              color: #64748b;
-              font-size: 1.2em;
-              margin-bottom: 30px;
-          }
-          .section {
-              margin: 30px 0;
-          }
-          .package-card {
-              border: 1px solid #e2e8f0;
-              border-radius: 8px;
-              padding: 20px;
-              margin: 15px 0;
-              background: #f8fafc;
-          }
-          .package-name {
-              font-weight: bold;
-              color: #0369a1;
-              text-decoration: none;
-          }
-          .package-name:hover {
-              text-decoration: underline;
-          }
-          .badge {
-              background: #0369a1;
-              color: white;
-              padding: 4px 8px;
-              border-radius: 4px;
-              font-size: 0.8em;
-              margin-left: 10px;
-          }
-          .social-links a {
-              margin: 0 15px 0 0;
-              color: #0369a1;
-              text-decoration: none;
-          }
-          .social-links a:hover {
-              text-decoration: underline;
-          }
-      </style>
-  </head>
-  <body>
-      <div class="container">
-          <h1>Naseef CR</h1>
-          <p class="subtitle">Flutter Developer & Open Source Contributor</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Rahman Naseef C R — Co-founder, Wellnoc Global LLP</title>
+  <meta name="description" content="Software developer and entrepreneur from Kasaragod, Kerala. Co-founder of Wellnoc Global LLP, building Wellnoc Technologies and SaaS products such as Earth Movers Pro.">
+  <meta property="og:title" content="Abdul Rahman Naseef C R — Co-founder, Wellnoc Global LLP">
+  <meta property="og:description" content="Software developer and entrepreneur building software, digital solutions and SaaS products at Wellnoc Technologies.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://naseefcr.github.io/">
+  <meta name="theme-color" content="#0f766e">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdul Rahman Naseef C R",
+    "jobTitle": "Co-founder, Wellnoc Global LLP",
+    "url": "https://naseefcr.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Kasaragod", "addressRegion": "Kerala", "addressCountry": "IN" },
+    "worksFor": { "@type": "Organization", "name": "Wellnoc Global LLP", "url": "https://www.wellnoctech.com/" },
+    "sameAs": [
+      "https://github.com/naseefcr",
+      "https://www.linkedin.com/in/abdul-rahman-naseef-c-r-341378226",
+      "https://pub.dev/publishers/naseefcr.github.io/packages"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #f8fafc; --card: #ffffff; --text: #334155; --muted: #64748b;
+      --heading: #0f172a; --border: #e2e8f0; --accent: #0f766e; --accent-soft: #ccfbf1;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220; --card: #111a2e; --text: #cbd5e1; --muted: #94a3b8;
+        --heading: #f1f5f9; --border: #1f2a44; --accent: #2dd4bf; --accent-soft: #0f2f2c;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0 16px 48px; background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; }
+    header { padding: 64px 0 24px; }
+    h1 { font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 8px; color: var(--heading); letter-spacing: -0.02em; }
+    .role { font-size: 1.2rem; color: var(--accent); font-weight: 600; margin: 0 0 12px; }
+    .lead { color: var(--muted); margin: 0 0 20px; max-width: 640px; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-block; padding: 9px 16px; border-radius: 8px; font-weight: 600; font-size: .92rem;
+      text-decoration: none; border: 1px solid var(--border); color: var(--heading); background: var(--card);
+    }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    @media (prefers-color-scheme: dark) { .btn.primary { color: #042f2e; } }
+    .btn:hover { filter: brightness(1.06); }
+    section { margin-top: 40px; }
+    h2 { font-size: 1.4rem; color: var(--heading); margin: 0 0 16px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px;
+    }
+    .card h3 { margin: 0 0 6px; font-size: 1.05rem; color: var(--heading); }
+    .card p { margin: 0 0 10px; font-size: .95rem; }
+    .card a.more { color: var(--accent); font-weight: 600; text-decoration: none; font-size: .92rem; }
+    .card a.more:hover { text-decoration: underline; }
+    .tag {
+      display: inline-block; background: var(--accent-soft); color: var(--accent); font-size: .75rem; font-weight: 600;
+      padding: 3px 9px; border-radius: 999px; margin: 0 6px 6px 0;
+    }
+    .pkg { border-left: 4px solid var(--accent); }
+    ul.plain { margin: 0; padding-left: 20px; }
+    footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: .85rem; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
 
-          <div class="section">
-              <h2>About</h2>
-              <p>Passionate Flutter developer specializing in mobile applications and local
-  networking solutions.
-                 Creator of packages that help developers build robust, real-time
-  applications.</p>
-          </div>
-
-          <div class="section">
-              <h2>Published Packages</h2>
-              <div class="package-card">
-                  <a href="https://pub.dev/packages/restaurant_local_server"
-  class="package-name">restaurant_local_server</a>
-                  <span class="badge">Flutter Package</span>
-                  <p>A comprehensive Flutter package for building local server applications
-  with UDP discovery,
-                     HTTP REST APIs, WebSocket support, and real-time synchronization
-  capabilities.</p>
-                  <p><strong>Features:</strong> UDP Network Discovery, WebSocket Server, HTTP
-  REST API,
-                     Service Orchestration, Health Monitoring</p>
-              </div>
-          </div>
-
-          <div class="section">
-              <h2>Contact & Links</h2>
-              <div class="social-links">
-                  <a href="https://github.com/naseefcr">GitHub</a>
-                  <a href="https://pub.dev/publishers/naseefcr.github.io/packages">pub.dev</a>
-              </div>
-          </div>
-
-          <div class="section">
-              <p><small>This site is used for pub.dev publisher verification and showcasing
-  published Flutter packages.</small></p>
-          </div>
+    <header>
+      <h1>Abdul Rahman Naseef C R</h1>
+      <p class="role">Software developer &amp; entrepreneur · Co-founder, Wellnoc Global LLP</p>
+      <p class="lead">
+        From Kasaragod, Kerala, with a Master's degree in Computer Science. I build software, digital solutions and SaaS
+        products through <strong>Wellnoc Technologies</strong>, with the long-term vision of serving businesses and
+        customers internationally.
+      </p>
+      <div class="links">
+        <a class="btn primary" href="https://www.wellnoctech.com/">Wellnoc Technologies</a>
+        <a class="btn" href="https://www.earthmovers.pro/home">Earth Movers Pro</a>
+        <a class="btn" href="https://github.com/naseefcr">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/abdul-rahman-naseef-c-r-341378226">LinkedIn</a>
+        <a class="btn" href="mailto:naseefcr19@gmail.com">Email</a>
       </div>
-  </body>
-  </html>
+    </header>
+
+    <section>
+      <h2>What I'm building</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Wellnoc Technologies</h3>
+          <p>Software company for custom web and mobile apps, e-commerce, inventory and ERP systems.</p>
+          <a class="more" href="https://www.wellnoctech.com/">wellnoctech.com →</a>
+        </div>
+        <div class="card">
+          <h3>Earth Movers Pro</h3>
+          <p>My own SaaS product: fleet and business management for earthmoving companies — work logs, diesel and expenses, operator payments and reports.</p>
+          <a class="more" href="https://www.earthmovers.pro/home">earthmovers.pro →</a>
+        </div>
+        <div class="card">
+          <h3>Wellnoc</h3>
+          <p>A Japan-focused education and career venture: language training, university admissions and scholarships.</p>
+          <a class="more" href="https://www.wellnoc.com/">wellnoc.com →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Apps on the stores</h2>
+      <div class="grid">
+        <div class="card"><h3>Earth Movers Pro</h3><p>Fleet, work-log, expense and payroll management.</p><span class="tag">Android</span><span class="tag">iOS</span><span class="tag">Web</span></div>
+        <div class="card"><h3>Workers Pro</h3><p>Workforce management app.</p><span class="tag">Android</span></div>
+        <div class="card"><h3>Feastvero</h3><p>Catering &amp; events management.</p><span class="tag">Android</span></div>
+        <div class="card"><h3>Wellnoc Orbit</h3><p>Wellnoc's own app.</p><span class="tag">Android</span></div>
+        <div class="card"><h3>Al-Bader Islamic App</h3><p>Prayer times, Qur'an and duas.</p><span class="tag">iPhone</span><span class="tag">iPad</span></div>
+      </div>
+      <div class="links" style="margin-top:16px">
+        <a class="btn" href="https://play.google.com/store/apps/developer?id=Wellnoc+Solutions">Google Play</a>
+        <a class="btn" href="https://apps.apple.com/in/developer/wellnoc-global-llp/id1896582695">App Store</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected client work</h2>
+      <div class="grid">
+        <div class="card"><h3>PaperBee Books</h3><p>Publishing platform and online bookstore.</p><a class="more" href="https://mypaperbee.com/">mypaperbee.com →</a></div>
+        <div class="card"><h3>Effi Online Store</h3><p>E-commerce storefront with WhatsApp-integrated ordering and fast product filtering.</p><a class="more" href="https://www.effionlinestore.com/">effionlinestore.com →</a></div>
+        <div class="card"><h3>Inventory &amp; supply chain</h3><p>Multi-branch inventory and stock-tracking systems for logistics and hardware businesses.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Open source</h2>
+      <div class="card pkg">
+        <h3><a href="https://pub.dev/packages/restaurant_local_server">restaurant_local_server</a> <span class="tag">Flutter package</span></h3>
+        <p>A Flutter package for building local-network server applications with UDP discovery, HTTP REST APIs, WebSocket support and real-time synchronisation.</p>
+        <p><strong>Features:</strong> UDP network discovery · WebSocket server · HTTP REST API · service orchestration · health monitoring</p>
+        <a class="more" href="https://pub.dev/publishers/naseefcr.github.io/packages">All packages on pub.dev →</a>
+        &nbsp;·&nbsp;
+        <a class="more" href="https://github.com/naseefcr/restaurant_local_server">Source on GitHub →</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="card">
+        <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Next.js</span><span class="tag">React</span>
+        <span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span><span class="tag">Firebase</span>
+        <span class="tag">Supabase</span><span class="tag">REST APIs</span><span class="tag">PostgreSQL</span>
+        <span class="tag">SaaS product design</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Let's talk</h2>
+      <div class="card">
+        <p>Open to client projects, collaborations and partnerships — business software, SaaS products, and Flutter / Next.js apps.</p>
+        <ul class="plain">
+          <li>Email: <a href="mailto:naseefcr19@gmail.com">naseefcr19@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/abdul-rahman-naseef-c-r-341378226">Abdul Rahman Naseef C R</a></li>
+          <li>GitHub: <a href="https://github.com/naseefcr">github.com/naseefcr</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Abdul Rahman Naseef C R · This site is also the verified publisher domain for my pub.dev packages.
+    </footer>
+
+  </div>
+</body>
+</html>
